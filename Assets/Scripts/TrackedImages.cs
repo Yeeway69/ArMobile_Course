@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
@@ -11,6 +12,7 @@ public class TrackedImages : MonoBehaviour
     [SerializeField]
     ARTrackedImageManager m_TrackedImageManager;
     public GameObject prefabToSpawn; // Assign your content prefab in the Inspector
+    public GameObject prefabToSpawn1; // Assign your content prefab in the Inspector
 
     void OnEnable() => m_TrackedImageManager.trackedImagesChanged += OnChanged;
 
@@ -23,20 +25,31 @@ public class TrackedImages : MonoBehaviour
             // Handle added event
             Debug.Log("Imaged added " + newImage.referenceImage.name);
 
-            GameObject newObject = Instantiate(prefabToSpawn, newImage.transform.position, newImage.transform.rotation);
-            newObject.transform.parent = newImage.transform; // Parent to the tracked image
+
+            if(newImage.referenceImage.name == "astronaut")
+            {
+                GameObject newObject = Instantiate(prefabToSpawn, newImage.transform.position, newImage.transform.rotation);
+                newObject.transform.parent = newImage.transform; // Parent to the tracked image
+                Debug.Log("astronaut detected");
+            }
+            if(newImage.referenceImage.name == "Drone")
+            {
+                GameObject newObject = Instantiate(prefabToSpawn1, newImage.transform.position, newImage.transform.rotation);
+                newObject.transform.parent = newImage.transform; // Parent to the tracked image
+                Debug.Log("Drone detected");
+            }
         }
 
         foreach (var updatedImage in eventArgs.updated)
         {
             // Handle updated event
-            Debug.Log("Imaged updated " + updatedImage.referenceImage.name);
+            //Debug.Log("Imaged updated " + updatedImage.referenceImage.name);
         }
 
         foreach (var removedImage in eventArgs.removed)
         {
             // Handle removed event
-            Debug.Log("Imaged removed " + removedImage.referenceImage.name);
+            //Debug.Log("Imaged removed " + removedImage.referenceImage.name);
         }
     }
 

@@ -26,4 +26,34 @@ MonoBehaviour:
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
     m_Name: astronaut
-    m_Texture: {fileID: 0}
+    m_Texture: {fileID: 2800000, guid: 5cdd32a4002b18541836261f996f84ed, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5534155966309766990
+      m_GuidHigh: 17328812754061622455
+    m_SerializedTextureGuid:
+      m_GuidLow: 8643598687090581253
+      m_GuidHigh: 1844984213027673144
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Drone
+    m_Texture: {fileID: 2800000, guid: cd111f053b3577f438d4b7d95db39a19, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5412898825672566941
+      m_GuidHigh: 5568605090587563944
+    m_SerializedTextureGuid:
+      m_GuidLow: 82367728292732106
+      m_GuidHigh: 12734199267010009963
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Fissure
+    m_Texture: {fileID: 2800000, guid: 31d81ccaa10301246bdb2bc1c3f6b8b0, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 4795419881956553179
+      m_GuidHigh: 6342079773075955335
+    m_SerializedTextureGuid:
+      m_GuidLow: 10868557094585370420
+      m_GuidHigh: 581689792843387608
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Oxygen
+    m_Texture: {fileID: 2800000, guid: ebd00734df1796d4d892e6dfc8931208, type: 3}
