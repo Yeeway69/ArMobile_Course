@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: SimulationEnvironmentAssetsManager
   m_EditorClassIdentifier: 
   m_EnvironmentPrefabPaths:
+  - Assets/Prefabs/Simulation Environment2.prefab
   - Assets/Simulation Environments/DefaultSimulationEnvironment 1.prefab
   - Assets/Simulation Environments/DefaultSimulationEnvironment 2.prefab
   - Packages/com.unity.xr.arfoundation/Assets/Prefabs/DefaultSimulationEnvironment.prefab
